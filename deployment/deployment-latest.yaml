@@ -43,19 +43,19 @@ data:
     replaceStrategies:
       - case: "quay.io"
         mode: prefix
-        value: "quay.azk8s.cn"
+        value: "quay-mirror.qiniu.com"
       - case: "gcr.io"
         mode: prefix
-        value: "gcr.azk8s.cn"
+        value: "registry.cn-hangzhou.aliyuncs.com/google_containers"
       - case: "k8s.gcr.io"
         mode: prefix
-        value: "gcr.azk8s.cn/google-containers"
+        value: "registry.cn-hangzhou.aliyuncs.com/google_containers"
       - case: "docker.io"
         mode: prefix
-        value: "dockerhub.azk8s.cn"
+        value: "f1361db2.m.daocloud.io"
       - case: "default"
         mode: default
-        value: "dockerhub.azk8s.cn"
+        value: "f1361db2.m.daocloud.io"
 ---
 apiVersion: apps/v1
 kind: Deployment
